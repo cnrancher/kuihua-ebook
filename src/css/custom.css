@@ -1,0 +1,175 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+html {
+  -webkit-font-smoothing: auto;
+}
+:root {
+  --ifm-color-primary: #0075a8;
+  --ifm-color-primary-dark: #006997;
+  --ifm-color-primary-darker: #00638f;
+  --ifm-color-primary-darkest: #005276;
+  --ifm-color-primary-light: #0081b9;
+  --ifm-color-primary-lighter: #0087c1;
+  --ifm-color-primary-lightest: #0098da;
+  --ifm-rancher-color-text-light: #34495e;
+  --ifm-rancher-color-text-lighter: #52677c;
+  --ifm-rancher-color-stable: #27ae5f;
+  --ifm-rancher-color-latest: #f1c40f;
+  --ifm-rancher-color-vedio: rgb(204, 0, 0);
+  --ifm-footer-padding-vertical: 12px;
+  --ifm-code-font-size: 95%;
+  --ifm-navbar-background-color: #0075a8;
+  --ifm-navbar-link-color: rgb(255, 255, 255, 0.9);
+  --ifm-navbar-link-hover-color: rgb(255, 255, 255);
+  --ra-color-important: var(--ifm-color-primary);
+}
+
+html[data-theme="dark"] {
+  --ifm-navbar-background-color: rgb(48, 56, 70);
+  --ifm-heading-color: rgb(255, 255, 255, 0.8);
+  --ifm-color-primary: rgb(255, 255, 255, 0.8);
+  --ifm-font-base-color: rgb(255, 255, 255, 0.8);
+  --ifm-hero-background-color: tranparent;
+  --ifm-rancher-color-stable: #13572f;
+  --ifm-rancher-color-latest: #786207;
+  --ifm-rancher-color-vedio: rgb(204, 0, 0, 0.5);
+}
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+}
+
+p {
+  line-height: 2;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.docTitle_src-theme-DocItem- {
+  font-size: 2rem !important;
+  margin-bottom: 2rem !important;
+  border-left: 10px solid var(--ifm-color-primary);
+  padding-left: 1.5rem;
+}
+
+.text-xs {
+  font-size: 12px !important;
+}
+
+.text-grey {
+  color: grey !important;
+}
+
+.text-gray {
+  color: rgb(101, 125, 149);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.navbar-sidebar__items .menu__list-item a {
+  color: var(--ifm-navbar-link-color);
+}
+
+.navbar__items .navbar__toggle {
+  color: var(--ifm-navbar-link-color);
+}
+
+.admonition-important a {
+  color: var(--ifm-navbar-background-color);
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.input-phone {
+  width: 50%;
+}
+
+.button-phone {
+  width: 50%;
+  margin-left: 10px;
+}
+
+.button-pdf {
+  border-radius: 4px;
+  background-color: var(--ifm-color-primary-lighter);
+  color: #fff;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.button-phone[disabled] {
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.text-error {
+  color: var(--ifm-rancher-color-vedio) !important;
+}
+
+[class^="copyButton_"] {
+  color: #cccccc !important;
+}
+
+/* black cow style */
+.hero__logo {
+  max-width: 350px;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
+.navigation__subtitle {
+  margin-bottom: 0;
+}
+
+/* main navigation */
+.navigation__grid {
+  padding: 3.6rem 2rem 0;
+  max-width: 960px;
+  margin: 0 auto;
+  border-top: 1px solid #adc5e8;
+  padding: 1.2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: stretch;
+  justify-content: space-between;
+}
+
+.navigation__item {
+  flex-grow: 1;
+  flex-basis: 30%;
+  max-width: 30%;
+}
+
+.navigation__title a {
+  color: var(--ifm-color-primary)
+}
+
+.navigation__title a:hover {
+  text-decoration: none;
+}
+
+.navigation__title a h1 {
+  margin-top: 16px;
+}
+
+.navigation__content p {
+  color: #4e6e8e;
+}
