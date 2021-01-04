@@ -11,7 +11,7 @@ const metaTitle = "故障处理 | Rancher";
 function findAndAppendSubGroups(all, metadata, baseUrl, subItems) {
     subItems.forEach((sub) => {
         if (typeof sub === "string") {
-            const label = metadata.docs.troubleshooting[sub];
+            const label = metadata.docs.tooluse[sub];
             if (label) {
                 all.push({
                     label,
@@ -26,7 +26,7 @@ function findAndAppendSubGroups(all, metadata, baseUrl, subItems) {
 
 function getToc(sidebars, metadata, baseUrl) {
     const out = [];
-    const docs = sidebars.troubleshooting;
+    const docs = sidebars.tooluse;
     Object.keys(docs).forEach((categoryKey) => {
         const allSubGroups = [];
         findAndAppendSubGroups(
@@ -35,7 +35,7 @@ function getToc(sidebars, metadata, baseUrl) {
             baseUrl,
             docs[categoryKey]
         );
-        const description = metadata.categories.troubleshooting[categoryKey];
+        const description = metadata.categories.tooluse[categoryKey];
         if (description) {
             out.push({
                 key: categoryKey,
@@ -53,7 +53,7 @@ function Home() {
     const { baseUrl } = siteConfig;
     const { sidebars, metadata } = siteConfig.customFields;
     const toc = getToc(sidebars, metadata, baseUrl);
-    const title = "故障处理板块";
+    const title = "排查工具使用板块";
     return (
         <Layout title={metaTitle} description={description} keywords={keywords}>
             <header className={classnames("hero", styles.heroBanner)}>
@@ -61,7 +61,7 @@ function Home() {
                     <h1 className="hero__title">{title}</h1>
                     <p className="hero__subtitle">{siteConfig.tagline}</p>
                     <div className="text-xs text-gray">
-                       嘿嘿，本版本内容涵盖日常中遇到的客户问题处理记录，可以方便快速的查看一些重复问题的处理过程，快速为客户解决问题；提交文档请按照格式要求提交；
+                        嘿嘿，本版块包括一些故障处理过程中的一些工具的使用，比如说 go pprof工具的使用等等；提交文档请按照格式要求提交；
                     </div>
                 </div>
             </header>

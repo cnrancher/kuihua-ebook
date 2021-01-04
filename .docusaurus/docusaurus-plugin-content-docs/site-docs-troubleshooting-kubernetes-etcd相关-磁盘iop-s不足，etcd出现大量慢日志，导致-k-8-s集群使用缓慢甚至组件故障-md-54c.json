@@ -1,0 +1,19 @@
+{
+  "id": "troubleshooting/Kubernetes/etcd相关/磁盘IOPS不足，etcd出现大量慢日志，导致K8S集群使用缓慢甚至组件故障",
+  "title": "磁盘IOPS不足，etcd出现大量慢日志，导致K8S集群使用缓慢甚至组件故障",
+  "description": "# etcd集群中超过一半以上的节点故障导致leader选主失败",
+  "source": "@site/docs/troubleshooting/Kubernetes/etcd相关/磁盘IOPS不足，etcd出现大量慢日志，导致K8S集群使用缓慢甚至组件故障.md",
+  "permalink": "/docs/troubleshooting/Kubernetes/etcd相关/磁盘IOPS不足，etcd出现大量慢日志，导致K8S集群使用缓慢甚至组件故障",
+  "editUrl": "https://github.com/cnrancher/docs-rancher2/edit/master/docs/troubleshooting/Kubernetes/etcd相关/磁盘IOPS不足，etcd出现大量慢日志，导致K8S集群使用缓慢甚至组件故障.md",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "troubleshooting",
+  "previous": {
+    "title": "etcd集群中超过一半以上的节点故障导致leader选主失败",
+    "permalink": "/docs/troubleshooting/Kubernetes/etcd相关/etcd集群中超过一半以上的节点故障导致leader选主失败"
+  },
+  "next": {
+    "title": "POD使用性能低的NAS导致节点大量僵尸进程，系统负载虚高",
+    "permalink": "/docs/troubleshooting/Kubernetes/存储相关/POD使用性能低的NAS导致节点大量僵尸进程，系统负载虚高"
+  }
+}

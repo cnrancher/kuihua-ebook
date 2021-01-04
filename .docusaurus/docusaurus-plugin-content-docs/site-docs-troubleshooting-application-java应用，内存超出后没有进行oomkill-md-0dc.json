@@ -1,0 +1,15 @@
+{
+  "id": "troubleshooting/application/JAVA应用，内存超出后没有进行OOMKILL",
+  "title": "JAVA应用，内存超出后没有进行OOMKILL",
+  "description": "# JAVA应用，内存超出后没有进行OOMKILL",
+  "source": "@site/docs/troubleshooting/application/JAVA应用，内存超出后没有进行OOMKILL.md",
+  "permalink": "/docs/troubleshooting/application/JAVA应用，内存超出后没有进行OOMKILL",
+  "editUrl": "https://github.com/cnrancher/docs-rancher2/edit/master/docs/troubleshooting/application/JAVA应用，内存超出后没有进行OOMKILL.md",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "troubleshooting",
+  "previous": {
+    "title": "内核arp_proxy参数配置不当导致Macvlan环路",
+    "permalink": "/docs/troubleshooting/OS/Kernel/内核arp_proxy参数配置不当导致Macvlan环路"
+  }
+}

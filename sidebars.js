@@ -55,4 +55,35 @@ module.exports = {
             },
         ],
     },
+    solution: {
+       监控相关: [
+        {
+            type: "category",
+            label: "监控相关",
+            items: [
+                "solution/monitoring/Rancher-2.4.8-ent以上版本监控使用Nodeport暴露",
+            ],
+        },
+       ],
+       公有云小技巧: [
+        {
+            type: "category",
+            label: "公有云小技巧",
+            items: [
+                "solution/cloud/通过rancher创建eks使用alb-ingress",
+            ],
+        },
+       ],
+    },
+    tooluse: {
+        Kubernenetes组件异常排查: [
+         {
+             type: "category",
+             label: "Kubernenetes组件异常排查",
+             items: [
+                 "tooluse/kubernetes/kubeletCPU使用率过高问题排查",
+             ],
+         },
+        ],
+     },
 };

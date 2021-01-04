@@ -7,11 +7,11 @@ import styles from "./styles.module.css";
 const description =
     "Rancher中文文档由Rancher中国研发团队翻译并重新编排，每周更新，与Rancher英文文档保持同步。另一方面，Rancher中文文档也是Kubernetes入门的重要性内容文档，用户可以从中获得K8S相关的有用知识。";
 const keywords = ["Rancher文档", "k8s文档", "容器管理平台", "Kubernetes集群"];
-const metaTitle = "Rancher 2.x 文档 | Rancher";
+const metaTitle = "解决方案 | Rancher";
 function findAndAppendSubGroups(all, metadata, baseUrl, subItems) {
     subItems.forEach((sub) => {
         if (typeof sub === "string") {
-            const label = metadata.docs.rancher2[sub];
+            const label = metadata.docs.solution[sub];
             if (label) {
                 all.push({
                     label,
@@ -26,7 +26,7 @@ function findAndAppendSubGroups(all, metadata, baseUrl, subItems) {
 
 function getToc(sidebars, metadata, baseUrl) {
     const out = [];
-    const docs = sidebars.rancher2;
+    const docs = sidebars.solution;
     Object.keys(docs).forEach((categoryKey) => {
         const allSubGroups = [];
         findAndAppendSubGroups(
@@ -35,7 +35,7 @@ function getToc(sidebars, metadata, baseUrl) {
             baseUrl,
             docs[categoryKey]
         );
-        const description = metadata.categories.rancher2[categoryKey];
+        const description = metadata.categories.solution[categoryKey];
         if (description) {
             out.push({
                 key: categoryKey,
@@ -53,7 +53,7 @@ function Home() {
     const { baseUrl } = siteConfig;
     const { sidebars, metadata } = siteConfig.customFields;
     const toc = getToc(sidebars, metadata, baseUrl);
-    const title = "Rancher 2.x 中文文档";
+    const title = "解决方案板块";
     return (
         <Layout title={metaTitle} description={description} keywords={keywords}>
             <header className={classnames("hero", styles.heroBanner)}>
@@ -61,8 +61,7 @@ function Home() {
                     <h1 className="hero__title">{title}</h1>
                     <p className="hero__subtitle">{siteConfig.tagline}</p>
                     <div className="text-xs text-gray">
-                        在任何页面，您都可以单击左上角的logo回到本页。想要下载离线文档，请单击导航栏中的“获取
-                        PDF 文档”。
+                        嘿嘿，本版本内容涵盖日常中遇到的客户问题处理记录，可以方便快速的查看一些重复问题的处理过程，快速为客户解决问题；提交文档请按照格式要求提交；
                     </div>
                 </div>
             </header>

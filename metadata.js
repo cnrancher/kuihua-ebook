@@ -6,6 +6,13 @@ const metadata = {
             操作系统相关: "一些因为操作系统引起的问题处理排查解决手册",
             应用问题相关: "一些应用无法启动/重启/非正常运行的处理排查解决手册"
         },
+        solution: {
+            监控相关: "一些跟监控相关的解决方案手册",
+            公有云小技巧: "一些跟公有云相关的解决方案手册",
+        },
+        tooluse: {
+            Kubernenetes组件异常排查: "一些跟Kubernetes组件异常排场相关的手册",
+        },
     },
     docs: {
         troubleshooting: {
@@ -19,7 +26,14 @@ const metadata = {
             "troubleshooting/Kubernetes/Network相关/Pod IP无法释放导致无法新建Workload": "Pod IP无法释放导致无法新建Workload",
             "troubleshooting/Kubernetes/Network相关/Pod内无法访问api-server": "Pod内无法访问api-server",
             "troubleshooting/Kubernetes/Network相关/双网卡网络Macvlan路由配置问题导致vxlan网卡访问丢包": "双网卡网络Macvlan路由配置问题导致vxlan网卡访问丢包",
-            "troubleshooting/application/JAVA应用，内存超出后没有进行OOMKILL": "AVA应用，内存超出Limit后没有进行OOMKILL",
+            "troubleshooting/application/JAVA应用，内存超出后没有进行OOMKILL": "JAVA应用，内存超出Limit后没有进行OOMKILL",
+        },
+        solution: {
+            "solution/monitoring/Rancher-2.4.8-ent以上版本监控使用Nodeport暴露": "Rancher-2.4.8-ent以上版本监控使用Nodeport暴露",
+            "solution/cloud/通过rancher创建eks使用alb-ingress": "通过rancher创建eks使用alb-ingress",
+        },
+        tooluse: {
+            "tooluse/kubernetes/kubeletCPU使用率过高问题排查":"kubeletCPU使用率过高问题排查",
         },
     },
 };

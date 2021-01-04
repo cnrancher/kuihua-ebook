@@ -1,0 +1,11 @@
+{
+  "id": "tooluse/kubeletCPU使用率过高问题排查",
+  "title": "kubeletCPU使用率过高问题排查",
+  "description": "# kubelet CPU 使用率过高问题排查",
+  "source": "@site/docs/tooluse/kubeletCPU使用率过高问题排查.md",
+  "permalink": "/docs/tooluse/kubeletCPU使用率过高问题排查",
+  "editUrl": "https://github.com/cnrancher/docs-rancher2/edit/master/docs/tooluse/kubeletCPU使用率过高问题排查.md",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "tooluse"
+}

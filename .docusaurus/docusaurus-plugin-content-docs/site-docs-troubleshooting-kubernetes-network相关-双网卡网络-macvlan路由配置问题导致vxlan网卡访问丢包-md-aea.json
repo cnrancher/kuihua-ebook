@@ -1,0 +1,19 @@
+{
+  "id": "troubleshooting/Kubernetes/Network相关/双网卡网络Macvlan路由配置问题导致vxlan网卡访问丢包",
+  "title": "双网卡网络Macvlan路由配置问题导致vxlan网卡访问丢包",
+  "description": "# 双网卡网络Macvlan路由配置问题导致vxlan网卡访问丢包",
+  "source": "@site/docs/troubleshooting/Kubernetes/Network相关/双网卡网络Macvlan路由配置问题导致vxlan网卡访问丢包.md",
+  "permalink": "/docs/troubleshooting/Kubernetes/Network相关/双网卡网络Macvlan路由配置问题导致vxlan网卡访问丢包",
+  "editUrl": "https://github.com/cnrancher/docs-rancher2/edit/master/docs/troubleshooting/Kubernetes/Network相关/双网卡网络Macvlan路由配置问题导致vxlan网卡访问丢包.md",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "troubleshooting",
+  "previous": {
+    "title": "Pod内无法访问api-server",
+    "permalink": "/docs/troubleshooting/Kubernetes/Network相关/Pod内无法访问api-server"
+  },
+  "next": {
+    "title": "unregister_netdevice: waiting for eth0 to become free 报错",
+    "permalink": "/docs/troubleshooting/OS/Kernel/unregister_netdevice: waiting for eth0 to become free 报错"
+  }
+}
