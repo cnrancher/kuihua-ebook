@@ -1,0 +1,19 @@
+{
+  "id": "troubleshooting/OS/Kernel/unregister_netdevice: waiting for eth0 to become free 报错",
+  "title": "unregister_netdevice: waiting for eth0 to become free 报错",
+  "description": "# Centos默认3.10.x内核问题",
+  "source": "@site/docs/troubleshooting/OS/Kernel/unregister_netdevice: waiting for eth0 to become free 报错.md",
+  "permalink": "/docs/troubleshooting/OS/Kernel/unregister_netdevice: waiting for eth0 to become free 报错",
+  "editUrl": "https://github.com/cnrancher/docs-rancher2/edit/master/docs/troubleshooting/OS/Kernel/unregister_netdevice: waiting for eth0 to become free 报错.md",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "troubleshooting",
+  "previous": {
+    "title": "双网卡网络Macvlan路由配置问题导致vxlan网卡访问丢包",
+    "permalink": "/docs/troubleshooting/Kubernetes/Network相关/双网卡网络Macvlan路由配置问题导致vxlan网卡访问丢包"
+  },
+  "next": {
+    "title": "内核arp_proxy参数配置不当导致Macvlan环路",
+    "permalink": "/docs/troubleshooting/OS/Kernel/内核arp_proxy参数配置不当导致Macvlan环路"
+  }
+}

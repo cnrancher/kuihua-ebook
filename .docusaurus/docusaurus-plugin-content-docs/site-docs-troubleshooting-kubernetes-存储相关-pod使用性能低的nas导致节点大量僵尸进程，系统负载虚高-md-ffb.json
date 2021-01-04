@@ -1,0 +1,19 @@
+{
+  "id": "troubleshooting/Kubernetes/存储相关/POD使用性能低的NAS导致节点大量僵尸进程，系统负载虚高",
+  "title": "POD使用性能低的NAS导致节点大量僵尸进程，系统负载虚高",
+  "description": "# POD使用性能低的NAS导致节点大量僵尸进程，系统负载虚高",
+  "source": "@site/docs/troubleshooting/Kubernetes/存储相关/POD使用性能低的NAS导致节点大量僵尸进程，系统负载虚高.md",
+  "permalink": "/docs/troubleshooting/Kubernetes/存储相关/POD使用性能低的NAS导致节点大量僵尸进程，系统负载虚高",
+  "editUrl": "https://github.com/cnrancher/docs-rancher2/edit/master/docs/troubleshooting/Kubernetes/存储相关/POD使用性能低的NAS导致节点大量僵尸进程，系统负载虚高.md",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "troubleshooting",
+  "previous": {
+    "title": "磁盘IOPS不足，etcd出现大量慢日志，导致K8S集群使用缓慢甚至组件故障",
+    "permalink": "/docs/troubleshooting/Kubernetes/etcd相关/磁盘IOPS不足，etcd出现大量慢日志，导致K8S集群使用缓慢甚至组件故障"
+  },
+  "next": {
+    "title": "canal网络MTU值设置不合理性能测试丢包率高",
+    "permalink": "/docs/troubleshooting/Kubernetes/Network相关/canal网络MTU值设置不合理性能测试丢包率高"
+  }
+}
