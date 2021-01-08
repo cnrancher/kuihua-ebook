@@ -34,8 +34,20 @@ export default [
   
   routes: [
 {
+  path: '/docs/solution/Longging/RancherLogging收集日志进行外部二次处理',
+  component: ComponentCreator('/docs/solution/Longging/RancherLogging收集日志进行外部二次处理'),
+  exact: true,
+  
+},
+{
   path: '/docs/solution/cloud/通过rancher创建eks使用alb-ingress',
   component: ComponentCreator('/docs/solution/cloud/通过rancher创建eks使用alb-ingress'),
+  exact: true,
+  
+},
+{
+  path: '/docs/solution/docker/二进制方式升级containerd版本',
+  component: ComponentCreator('/docs/solution/docker/二进制方式升级containerd版本'),
   exact: true,
   
 },
@@ -108,6 +120,12 @@ export default [
 {
   path: '/docs/troubleshooting/OS/Kernel/内核arp_proxy参数配置不当导致Macvlan环路',
   component: ComponentCreator('/docs/troubleshooting/OS/Kernel/内核arp_proxy参数配置不当导致Macvlan环路'),
+  exact: true,
+  
+},
+{
+  path: '/docs/troubleshooting/OS/Kernel/内核参数tcp_tw_recycle参数导致服务访问异常',
+  component: ComponentCreator('/docs/troubleshooting/OS/Kernel/内核参数tcp_tw_recycle参数导致服务访问异常'),
   exact: true,
   
 },

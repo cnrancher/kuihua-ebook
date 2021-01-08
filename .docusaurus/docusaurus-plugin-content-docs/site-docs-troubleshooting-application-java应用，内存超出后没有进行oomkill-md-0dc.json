@@ -9,7 +9,7 @@
   "lastUpdatedAt": 1539502055,
   "sidebar": "troubleshooting",
   "previous": {
-    "title": "内核arp_proxy参数配置不当导致Macvlan环路",
-    "permalink": "/docs/troubleshooting/OS/Kernel/内核arp_proxy参数配置不当导致Macvlan环路"
+    "title": "内核参数tcp_tw_recycle参数导致服务访问异常",
+    "permalink": "/docs/troubleshooting/OS/Kernel/内核参数tcp_tw_recycle参数导致服务访问异常"
   }
 }

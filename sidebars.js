@@ -42,6 +42,7 @@ module.exports = {
                 items: [
                     "troubleshooting/OS/Kernel/unregister_netdevice: waiting for eth0 to become free 报错",
                     "troubleshooting/OS/Kernel/内核arp_proxy参数配置不当导致Macvlan环路",
+                    "troubleshooting/OS/Kernel/内核参数tcp_tw_recycle参数导致服务访问异常",
                 ],
             },
         ],
@@ -71,6 +72,24 @@ module.exports = {
             label: "公有云小技巧",
             items: [
                 "solution/cloud/通过rancher创建eks使用alb-ingress",
+            ],
+        },
+       ],
+       日志相关: [
+        {
+            type: "category",
+            label: "日志相关",
+            items: [
+                "solution/Longging/RancherLogging收集日志进行外部二次处理",
+            ],
+        },
+       ],
+       升级相关: [
+        {
+            type: "category",
+            label: "各种乱七八糟的东西升级手册",
+            items: [
+                "solution/docker/二进制方式升级containerd版本",
             ],
         },
        ],

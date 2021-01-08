@@ -13,7 +13,7 @@
     "permalink": "/docs/troubleshooting/OS/Kernel/unregister_netdevice: waiting for eth0 to become free 报错"
   },
   "next": {
-    "title": "JAVA应用，内存超出后没有进行OOMKILL",
-    "permalink": "/docs/troubleshooting/application/JAVA应用，内存超出后没有进行OOMKILL"
+    "title": "内核参数tcp_tw_recycle参数导致服务访问异常",
+    "permalink": "/docs/troubleshooting/OS/Kernel/内核参数tcp_tw_recycle参数导致服务访问异常"
   }
 }

@@ -11,5 +11,9 @@
   "previous": {
     "title": "Rancher-2.4.8-ent以上版本监控使用Nodeport暴露",
     "permalink": "/docs/solution/monitoring/Rancher-2.4.8-ent以上版本监控使用Nodeport暴露"
+  },
+  "next": {
+    "title": "RancherLogging收集日志进行外部二次处理",
+    "permalink": "/docs/solution/Longging/RancherLogging收集日志进行外部二次处理"
   }
 }
