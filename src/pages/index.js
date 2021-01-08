@@ -71,7 +71,7 @@ function Home() {
                 <div className="navigation__grid">
                     <div className="navigation__item">
                         <div className="navigation__title">
-                            <a href="https://ebook.rancher.cn/troubleshooting/">
+                            <a href="https://kb.rancher.cn/troubleshooting/">
                                 <h1>故障处理</h1>
                             </a>
                         </div>
@@ -83,7 +83,7 @@ function Home() {
                     </div>
                     <div className="navigation__item">
                         <div className="navigation__title">
-                            <a href="https://ebook.rancher.cn/solution/">
+                            <a href="https://kb.rancher.cn/solution/">
                                 <h1>解决方案</h1>
                             </a>
                         </div>
@@ -95,7 +95,7 @@ function Home() {
                     </div>
                     <div className="navigation__item">
                         <div className="navigation__title">
-                            <a href="https://ebook.rancher.cn/tooluse">
+                            <a href="https://kb.rancher.cn/tooluse">
                                 <h1>排查工具的使用</h1>
                             </a>
                         </div>
