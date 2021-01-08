@@ -42,7 +42,8 @@ export default {
             "label": "Kernel相关",
             "items": [
               "troubleshooting/OS/Kernel/unregister_netdevice: waiting for eth0 to become free 报错",
-              "troubleshooting/OS/Kernel/内核arp_proxy参数配置不当导致Macvlan环路"
+              "troubleshooting/OS/Kernel/内核arp_proxy参数配置不当导致Macvlan环路",
+              "troubleshooting/OS/Kernel/内核参数tcp_tw_recycle参数导致服务访问异常"
             ]
           }
         ],
@@ -74,6 +75,24 @@ export default {
               "solution/cloud/通过rancher创建eks使用alb-ingress"
             ]
           }
+        ],
+        "日志相关": [
+          {
+            "type": "category",
+            "label": "日志相关",
+            "items": [
+              "solution/Longging/RancherLogging收集日志进行外部二次处理"
+            ]
+          }
+        ],
+        "升级相关": [
+          {
+            "type": "category",
+            "label": "各种乱七八糟的东西升级手册",
+            "items": [
+              "solution/docker/二进制方式升级containerd版本"
+            ]
+          }
         ]
       },
       "tooluse": {
@@ -98,7 +117,9 @@ export default {
         },
         "solution": {
           "监控相关": "一些跟监控相关的解决方案手册",
-          "公有云小技巧": "一些跟公有云相关的解决方案手册"
+          "公有云小技巧": "一些跟公有云相关的解决方案手册",
+          "日志相关": "一些跟日志相关的解决方案手册",
+          "升级相关": "各种乱七八糟的东西升级手册"
         },
         "tooluse": {
           "Kubernenetes组件异常排查": "一些跟Kubernetes组件异常排场相关的手册"
@@ -116,11 +137,14 @@ export default {
           "troubleshooting/Kubernetes/Network相关/Pod IP无法释放导致无法新建Workload": "Pod IP无法释放导致无法新建Workload",
           "troubleshooting/Kubernetes/Network相关/Pod内无法访问api-server": "Pod内无法访问api-server",
           "troubleshooting/Kubernetes/Network相关/双网卡网络Macvlan路由配置问题导致vxlan网卡访问丢包": "双网卡网络Macvlan路由配置问题导致vxlan网卡访问丢包",
-          "troubleshooting/application/JAVA应用，内存超出后没有进行OOMKILL": "JAVA应用，内存超出Limit后没有进行OOMKILL"
+          "troubleshooting/application/JAVA应用，内存超出后没有进行OOMKILL": "JAVA应用，内存超出Limit后没有进行OOMKILL",
+          "troubleshooting/OS/Kernel/内核参数tcp_tw_recycle参数导致服务访问异常": "内核参数tcp_tw_recycle参数导致服务访问异常"
         },
         "solution": {
           "solution/monitoring/Rancher-2.4.8-ent以上版本监控使用Nodeport暴露": "Rancher-2.4.8-ent以上版本监控使用Nodeport暴露",
-          "solution/cloud/通过rancher创建eks使用alb-ingress": "通过rancher创建eks使用alb-ingress"
+          "solution/cloud/通过rancher创建eks使用alb-ingress": "通过rancher创建eks使用alb-ingress",
+          "solution/Longging/RancherLogging收集日志进行外部二次处理": "RancherLogging收集日志进行外部二次处理",
+          "solution/docker/二进制方式升级containerd版本": "二进制方式升级containerd版本"
         },
         "tooluse": {
           "tooluse/kubernetes/kubeletCPU使用率过高问题排查": "kubeletCPU使用率过高问题排查"

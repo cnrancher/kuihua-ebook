@@ -88,6 +88,11 @@
                 "type": "link",
                 "label": "内核arp_proxy参数配置不当导致Macvlan环路",
                 "href": "/docs/troubleshooting/OS/Kernel/内核arp_proxy参数配置不当导致Macvlan环路"
+              },
+              {
+                "type": "link",
+                "label": "内核参数tcp_tw_recycle参数导致服务访问异常",
+                "href": "/docs/troubleshooting/OS/Kernel/内核参数tcp_tw_recycle参数导致服务访问异常"
               }
             ]
           }
@@ -145,6 +150,40 @@
             ]
           }
         ]
+      },
+      {
+        "type": "category",
+        "label": "日志相关",
+        "items": [
+          {
+            "type": "category",
+            "label": "日志相关",
+            "items": [
+              {
+                "type": "link",
+                "label": "RancherLogging收集日志进行外部二次处理",
+                "href": "/docs/solution/Longging/RancherLogging收集日志进行外部二次处理"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "升级相关",
+        "items": [
+          {
+            "type": "category",
+            "label": "各种乱七八糟的东西升级手册",
+            "items": [
+              {
+                "type": "link",
+                "label": "二进制方式升级containerd版本",
+                "href": "/docs/solution/docker/二进制方式升级containerd版本"
+              }
+            ]
+          }
+        ]
       }
     ],
     "tooluse": [
@@ -168,7 +207,9 @@
     ]
   },
   "permalinkToSidebar": {
+    "/docs/solution/Longging/RancherLogging收集日志进行外部二次处理": "solution",
     "/docs/solution/cloud/通过rancher创建eks使用alb-ingress": "solution",
+    "/docs/solution/docker/二进制方式升级containerd版本": "solution",
     "/docs/solution/monitoring/Rancher-2.4.8-ent以上版本监控使用Nodeport暴露": "solution",
     "/docs/tooluse/kubernetes/kubeletCPU使用率过高问题排查": "tooluse",
     "/docs/troubleshooting/Docker/大量runc不释放，导致节点负载高": "troubleshooting",
@@ -181,6 +222,7 @@
     "/docs/troubleshooting/Kubernetes/存储相关/POD使用性能低的NAS导致节点大量僵尸进程，系统负载虚高": "troubleshooting",
     "/docs/troubleshooting/OS/Kernel/unregister_netdevice: waiting for eth0 to become free 报错": "troubleshooting",
     "/docs/troubleshooting/OS/Kernel/内核arp_proxy参数配置不当导致Macvlan环路": "troubleshooting",
+    "/docs/troubleshooting/OS/Kernel/内核参数tcp_tw_recycle参数导致服务访问异常": "troubleshooting",
     "/docs/troubleshooting/application/JAVA应用，内存超出后没有进行OOMKILL": "troubleshooting"
   }
 }
