@@ -34,6 +34,13 @@ module.exports = {
                     "troubleshooting/Kubernetes/Network相关/双网卡网络Macvlan路由配置问题导致vxlan网卡访问丢包",
                 ],
             },
+            {
+                type: "category",
+                label: "Istio相关",
+                items: [
+                    "tooluse/kubernetes/kubeletCPU使用率过高问题排查",
+                ],
+            },
         ],
         操作系统相关: [
             {
@@ -57,12 +64,31 @@ module.exports = {
         ],
     },
     solution: {
+        Kubernetes相关: [
+            {
+                type: "category",
+                label: "Kubernetes与周边组件相关解决方案",
+                items: [
+                    "solution/kubernetes/nginx-ingress基于gRPC协议通信",
+                    "solution/kubernetes/Kubernetess ingress-nginx实现金丝雀发布",
+                ],
+            },
+           ],
        监控相关: [
         {
             type: "category",
             label: "监控相关",
             items: [
                 "solution/monitoring/Rancher-2.4.8-ent以上版本监控使用Nodeport暴露",
+            ],
+        },
+       ],
+       存储相关: [
+        {
+            type: "category",
+            label: "存储相关",
+            items: [
+                "solution/storage/ceph对接kubernetes storage class",
             ],
         },
        ],
@@ -90,6 +116,7 @@ module.exports = {
             label: "各种乱七八糟的东西升级手册",
             items: [
                 "solution/docker/二进制方式升级containerd版本",
+                "solution/helm/helm2升级至helm3"
             ],
         },
        ],
@@ -104,5 +131,14 @@ module.exports = {
              ],
          },
         ],
+        工具安装部署: [
+            {
+                type: "category",
+                label: "工具安装部署",
+                items: [
+                    "tooluse/toolsinstall/安装kubectl ingress-nginx",
+                ],
+            },
+           ],
      },
 };
