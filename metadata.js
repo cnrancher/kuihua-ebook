@@ -43,7 +43,7 @@ const metadata = {
             "solution/helm/helm2升级至helm3": "helm2升级至helm3",
             "solution/kubernetes/nginx-ingress基于gRPC协议通信" : "nginx-ingress基于gRPC协议通信",
             "solution/kubernetes/Kubernetess ingress-nginx实现金丝雀发布": "Kubernetess ingress-nginx实现金丝雀发布",
-            "solution/storage/ceph对接kubernetes storage class": "solution/storage/ceph对接kubernetes storage class",
+            "solution/storage/ceph对接kubernetes storage class": "ceph对接kubernetes storage class",
         },
         tooluse: {
             "tooluse/kubernetes/kubeletCPU使用率过高问题排查": "kubeletCPU使用率过高问题排查",

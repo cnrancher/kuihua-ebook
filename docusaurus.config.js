@@ -42,8 +42,8 @@ module.exports = {
             ],
         },
         algolia: {
-            apiKey: "f790c2168867f49bb212aee8c224116d",
-            indexName: "rancher",
+            apiKey: "1379aca81c2a2dcd0ba9fa30b700d98c",
+            indexName: "kbrancher",
         },
         footer: {
             style: "dark",
