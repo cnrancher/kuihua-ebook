@@ -9,8 +9,8 @@
   "lastUpdatedAt": 1539502055,
   "sidebar": "troubleshooting",
   "previous": {
-    "title": "双网卡网络Macvlan路由配置问题导致vxlan网卡访问丢包",
-    "permalink": "/docs/troubleshooting/Kubernetes/Network相关/双网卡网络Macvlan路由配置问题导致vxlan网卡访问丢包"
+    "title": "kubeletCPU使用率过高问题排查",
+    "permalink": "/docs/tooluse/kubernetes/kubeletCPU使用率过高问题排查"
   },
   "next": {
     "title": "内核arp_proxy参数配置不当导致Macvlan环路",

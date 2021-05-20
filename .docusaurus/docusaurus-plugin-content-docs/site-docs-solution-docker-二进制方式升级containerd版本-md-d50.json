@@ -11,5 +11,9 @@
   "previous": {
     "title": "RancherLogging收集日志进行外部二次处理",
     "permalink": "/docs/solution/Longging/RancherLogging收集日志进行外部二次处理"
+  },
+  "next": {
+    "title": "helm2升级至helm3",
+    "permalink": "/docs/solution/helm/helm2升级至helm3"
   }
 }

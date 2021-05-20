@@ -9,8 +9,8 @@
   "lastUpdatedAt": 1539502055,
   "sidebar": "solution",
   "previous": {
-    "title": "Rancher-2.4.8-ent以上版本监控使用Nodeport暴露",
-    "permalink": "/docs/solution/monitoring/Rancher-2.4.8-ent以上版本监控使用Nodeport暴露"
+    "title": "ceph对接kubernetes storage class",
+    "permalink": "/docs/solution/storage/ceph对接kubernetes storage class"
   },
   "next": {
     "title": "RancherLogging收集日志进行外部二次处理",

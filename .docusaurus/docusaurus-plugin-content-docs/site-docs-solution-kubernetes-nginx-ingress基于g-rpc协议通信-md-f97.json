@@ -1,0 +1,15 @@
+{
+  "id": "solution/kubernetes/nginx-ingress基于gRPC协议通信",
+  "title": "nginx-ingress基于gRPC协议通信",
+  "description": "# nginx-ingress基于gRPC协议通信",
+  "source": "@site/docs/solution/kubernetes/nginx-ingress基于gRPC协议通信.md",
+  "permalink": "/docs/solution/kubernetes/nginx-ingress基于gRPC协议通信",
+  "editUrl": "https://github.com/cnrancher/docs-rancher2/edit/master/docs/solution/kubernetes/nginx-ingress基于gRPC协议通信.md",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "solution",
+  "next": {
+    "title": "Kubernetess ingress-nginx实现金丝雀发布",
+    "permalink": "/docs/solution/kubernetes/Kubernetess ingress-nginx实现金丝雀发布"
+  }
+}

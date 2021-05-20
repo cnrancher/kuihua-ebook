@@ -1,0 +1,19 @@
+{
+  "id": "solution/kubernetes/Kubernetess ingress-nginx实现金丝雀发布",
+  "title": "Kubernetess ingress-nginx实现金丝雀发布",
+  "description": "# K8s 1.18.6版本基于 ingress-nginx 实现金丝雀发布（灰度发布）",
+  "source": "@site/docs/solution/kubernetes/Kubernetess ingress-nginx实现金丝雀发布.md",
+  "permalink": "/docs/solution/kubernetes/Kubernetess ingress-nginx实现金丝雀发布",
+  "editUrl": "https://github.com/cnrancher/docs-rancher2/edit/master/docs/solution/kubernetes/Kubernetess ingress-nginx实现金丝雀发布.md",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "solution",
+  "previous": {
+    "title": "nginx-ingress基于gRPC协议通信",
+    "permalink": "/docs/solution/kubernetes/nginx-ingress基于gRPC协议通信"
+  },
+  "next": {
+    "title": "Rancher-2.4.8-ent以上版本监控使用Nodeport暴露",
+    "permalink": "/docs/solution/monitoring/Rancher-2.4.8-ent以上版本监控使用Nodeport暴露"
+  }
+}

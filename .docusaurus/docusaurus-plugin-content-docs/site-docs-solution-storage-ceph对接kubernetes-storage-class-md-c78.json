@@ -1,0 +1,19 @@
+{
+  "id": "solution/storage/ceph对接kubernetes storage class",
+  "title": "ceph对接kubernetes storage class",
+  "description": "|作者|谢泽钦|\r",
+  "source": "@site/docs/solution/storage/ceph对接kubernetes storage class.md",
+  "permalink": "/docs/solution/storage/ceph对接kubernetes storage class",
+  "editUrl": "https://github.com/cnrancher/docs-rancher2/edit/master/docs/solution/storage/ceph对接kubernetes storage class.md",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "solution",
+  "previous": {
+    "title": "在2.5dashhboard启动监控grafana对接ldap",
+    "permalink": "/docs/solution/monitoring/在2.5dashhboard启动监控grafana对接ldap"
+  },
+  "next": {
+    "title": "通过rancher创建eks使用alb-ingress",
+    "permalink": "/docs/solution/cloud/通过rancher创建eks使用alb-ingress"
+  }
+}

@@ -9,8 +9,8 @@
   "lastUpdatedAt": 1539502055,
   "sidebar": "troubleshooting",
   "previous": {
-    "title": "磁盘IOPS不足，etcd出现大量慢日志，导致K8S集群使用缓慢甚至组件故障",
-    "permalink": "/docs/troubleshooting/Kubernetes/etcd相关/磁盘IOPS不足，etcd出现大量慢日志，导致K8S集群使用缓慢甚至组件故障"
+    "title": "etcd集群中超过一半以上的节点故障导致leader选主失败",
+    "permalink": "/docs/troubleshooting/Kubernetes/etcd相关/etcd集群中超过一半以上的节点故障导致leader选主失败"
   },
   "next": {
     "title": "canal网络MTU值设置不合理性能测试丢包率高",

@@ -8,8 +8,12 @@
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055,
   "sidebar": "solution",
+  "previous": {
+    "title": "Kubernetess ingress-nginx实现金丝雀发布",
+    "permalink": "/docs/solution/kubernetes/Kubernetess ingress-nginx实现金丝雀发布"
+  },
   "next": {
-    "title": "通过rancher创建eks使用alb-ingress",
-    "permalink": "/docs/solution/cloud/通过rancher创建eks使用alb-ingress"
+    "title": "在2.5dashhboard启动监控grafana对接ldap",
+    "permalink": "/docs/solution/monitoring/在2.5dashhboard启动监控grafana对接ldap"
   }
 }
