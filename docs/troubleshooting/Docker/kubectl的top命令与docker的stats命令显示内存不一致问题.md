@@ -1,4 +1,4 @@
-# kubectl top与docker stats内存不一致问题
+# kubectl的top命令与docker的stats命令显示内存不一致问题
 
 | 作者   | 王哲              |
 |------|-----------------|
@@ -13,7 +13,7 @@
 
 # 一、cgroup
 
-提到容器资源，有一个绕不开的linux基础概念就是cgroup，这是Linux内核提供的一种可以限制单个进程或者多个进程所使用资源的机制，是为容器提供资源限制能力的最根本的技术来源。当我们要去获取容器资源使用情况的时候，cgroup文件中的值才是监控数据的最终来源。因此在了解容器资源使用之前我们就应当先了解linux操作系统中cgroup文件中关于资源的相关数据的含义是什么。一般情况下，cgroup文件夹下的内容包括CPU、内存、磁盘、网络等信息：
+提到容器资源，有一个绕不开的linux基础概念就是cgroup，这是Linux内核提供的一种可以限制单个进程或者多个进程所使用资源的机制，是为容器提供资源限制能力的最根本的技术来源。当我们要去获取容器资源使用情况的时候，cgroup文件中的值才是监控数据的最终来源。因此在了解容器资源使用之前我们就应当先了解linux操作系统中cgroup文件中关于资源的相关数据的含义是什么。一般情况下，cgroup文件夹下的内容包括CPU、内存、磁盘、网络等信息:
 
 ## cgroup目录下常用文件的含义
 文件名 | 含义
@@ -59,7 +59,7 @@ unevictable | 无法再生的内存，以字节为单位
 hierarchical_memory_limit | 包含memeory cgroup 的层级的内存限制，单位为字节
 hierarchical_memsw_limit | 包含memory cgroupd的层级的内存加swap限制，单位为字节
 
-ps:这个文件中关于内存的信息是最全的
+* 另外这个文件中关于内存的信息是最全的
 
 以上提供了这么多的文件和参数含义，其实是为了更好的去理解在我们容器监控中使用的一些数据来源和表达式,例如在获取容器内存使用量其实就是存储在/sys/fs/cgroup/memory/docker/<containerId>/memory.usage_in_bytes 文件内，再例如容器内存限制问题，如果没限制内存，Limit = machine_mem，否则该限制数值来自于/sys/fs/cgroup/memory/docker/[id]/memory.limit_in_bytes。
 
@@ -70,18 +70,18 @@ ps:这个文件中关于内存的信息是最全的
 
 ## kubectl top监控原理
 #### 数据链路
-kubectl top 、 k8s dashboard 以及 HPA 等调度组件使用的数据是一样，数据链路如下：
+kubectl top和k8s dashboard以及HPA等调度组件使用的数据是一样，数据链路如下:
 ![image](
 https://ivanwz.oss-cn-shenzhen.aliyuncs.com/md/kubectl%20top%E4%B8%8Edocker%20stats%E5%86%85%E5%AD%98%E4%B8%8D%E4%B8%80%E8%87%B4/Xnip2021-05-19_16-56-33.jpg)
 
-使用 metrics-server 时：apiserver是通过/apis/metrics.k8s.io/的地址访问metric
+使用metrics-server时apiserver是通过/apis/metrics.k8s.io/的地址访问metric
 
-metric-server 和普通 pod都是使用 api/xx 的资源接口，即 metric作为一种资源存在，如metrics.k8s.io 的形式，称之为 Metric Api，用于从kubelet获取指标。
+metric-server和普通pod都是使用 api/xx 的资源接口，即 metric作为一种资源存在，如metrics.k8s.io 的形式，称之为 Metric Api，用于从kubelet获取指标。
 #### 监控体系
-在提出 metric api 的概念时，官方页提出了新的监控体系，监控资源被分为了2种：
+在提出 metric api 的概念时，官方页提出了新的监控体系，监控资源被分为了2种:
 
-- Core metrics(核心指标)：从 Kubelet、cAdvisor 等获取度量数据，再由metrics-server提供给 Dashboard、HPA 控制器等使用。
-- Custom Metrics(自定义指标)：由Prometheus Adapter提供API custom.metrics.k8s.io，由此可支持任意Prometheus采集到的指标。
+- Core metrics(核心指标):从 Kubelet、cAdvisor 等获取度量数据，再由metrics-server提供给 Dashboard、HPA 控制器等使用。
+- Custom Metrics(自定义指标):由Prometheus Adapter提供API custom.metrics.k8s.io，由此可支持任意Prometheus采集到的指标。
 
 核心指标只包含node和pod的cpu、内存等，一般来说，核心指标作HPA已经足够，但如果想根据自定义指标:如请求qps/5xx错误数来实现HPA，就需要使用自定义指标了。
 
@@ -104,12 +104,12 @@ container_memory_failcnt | 申请内存失败次数计数
 container_memory_failures_total | 累计的内存申请错误次数
 
 
-#### 三个内存计算公式：
+#### 三个内存计算公式:
 - container_memory_working_set_bytes = container_memory_usage_bytes - total_inactive_anon - total_inactive_file
 - memory used =container_memory_usage_bytes - cache
 - cache = total_inactive_file + total_active_file
 
-#### kubectl top 与 docker status的计算方式：
+#### kubectl top 与 docker status的计算方式:
 
 - 使用kubectl top(container_memory_working_set_bytes) = memory.usage_in_bytes - inactive_file 
 - 使用docker stats(memory used) = memory.usage_in_bytes - cache
@@ -118,14 +118,14 @@ container_memory_failures_total | 累计的内存申请错误次数
 https://ivanwz.oss-cn-shenzhen.aliyuncs.com/md/kubectl%20top%E4%B8%8Edocker%20stats%E5%86%85%E5%AD%98%E4%B8%8D%E4%B8%80%E8%87%B4/Xnip2021-05-19_16-56-54.jpg)
 
 
-#### kubelet oom kill 的依据：
+#### kubelet oom kill 的依据:
 kubelet比较container_memory_working_set_bytes和container_spec_memory_limit_bytes来决定oom container
 
 #### Java应用的内存读取机制和oom kill依据（8u以下版本）
 - java不支持读取cgroup的限制。 默认是从/proc/目录读取可用内存。但是容器中的/proc目录默认是挂载的宿主机的内存目录。即java 读取的到可用的内存是宿主机的内存。那么自然会导致进程超出容器limit 限制的问题。
 - java是根据jvm中-Xmx的参数设置来限制进程的最大堆内存，这样的话java 去oom kill只会判断该进程资源使用是否超过限制。
 
-#### 假设：
+#### 假设:
 
 例如:容器的limit限制为4G。 那么设置java进程的最大堆内存为3.5G，采用这种方式后，容器重启的情况会少很多，但还是偶尔会出现OOMKilled 的情况。因为-xms 只能设置java进程的堆内存。 但是其他非堆内存的占用一旦超过预留的内存。还是会被kubernetes kil掉。
 出现这样的本质原因还是因为oom kill的主体不同角度不同。
