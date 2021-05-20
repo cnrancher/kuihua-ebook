@@ -9,7 +9,7 @@
   "lastUpdatedAt": 1539502055,
   "sidebar": "troubleshooting",
   "next": {
-    "title": "etcd集群中超过一半以上的节点故障导致leader选主失败",
-    "permalink": "/docs/troubleshooting/Kubernetes/etcd相关/etcd集群中超过一半以上的节点故障导致leader选主失败"
+    "title": "selinux引起的docker容器无法启动的问题",
+    "permalink": "/docs/troubleshooting/Docker/selinux引起的docker容器无法启动的问题"
   }
 }

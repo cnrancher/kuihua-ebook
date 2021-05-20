@@ -52,14 +52,62 @@ export default [
   
 },
 {
+  path: '/docs/solution/helm/helm2升级至helm3',
+  component: ComponentCreator('/docs/solution/helm/helm2升级至helm3'),
+  exact: true,
+  
+},
+{
+  path: '/docs/solution/kubernetes/Kubernetess ingress-nginx实现金丝雀发布',
+  component: ComponentCreator('/docs/solution/kubernetes/Kubernetess ingress-nginx实现金丝雀发布'),
+  exact: true,
+  
+},
+{
+  path: '/docs/solution/kubernetes/nginx-ingress基于gRPC协议通信',
+  component: ComponentCreator('/docs/solution/kubernetes/nginx-ingress基于gRPC协议通信'),
+  exact: true,
+  
+},
+{
   path: '/docs/solution/monitoring/Rancher-2.4.8-ent以上版本监控使用Nodeport暴露',
   component: ComponentCreator('/docs/solution/monitoring/Rancher-2.4.8-ent以上版本监控使用Nodeport暴露'),
   exact: true,
   
 },
 {
+  path: '/docs/solution/monitoring/在2.5dashhboard启动监控grafana对接ldap',
+  component: ComponentCreator('/docs/solution/monitoring/在2.5dashhboard启动监控grafana对接ldap'),
+  exact: true,
+  
+},
+{
+  path: '/docs/solution/storage/ceph对接kubernetes storage class',
+  component: ComponentCreator('/docs/solution/storage/ceph对接kubernetes storage class'),
+  exact: true,
+  
+},
+{
   path: '/docs/tooluse/kubernetes/kubeletCPU使用率过高问题排查',
   component: ComponentCreator('/docs/tooluse/kubernetes/kubeletCPU使用率过高问题排查'),
+  exact: true,
+  
+},
+{
+  path: '/docs/tooluse/toolsinstall/安装kubectl ingress-nginx',
+  component: ComponentCreator('/docs/tooluse/toolsinstall/安装kubectl ingress-nginx'),
+  exact: true,
+  
+},
+{
+  path: '/docs/troubleshooting/Docker/kubectl的top命令与docker的stats命令显示内存不一致问题',
+  component: ComponentCreator('/docs/troubleshooting/Docker/kubectl的top命令与docker的stats命令显示内存不一致问题'),
+  exact: true,
+  
+},
+{
+  path: '/docs/troubleshooting/Docker/selinux引起的docker容器无法启动的问题',
+  component: ComponentCreator('/docs/troubleshooting/Docker/selinux引起的docker容器无法启动的问题'),
   exact: true,
   
 },
@@ -100,8 +148,20 @@ export default [
   
 },
 {
+  path: '/docs/troubleshooting/Kubernetes/etcd相关/在没有快照的情况下恢复etcd集群',
+  component: ComponentCreator('/docs/troubleshooting/Kubernetes/etcd相关/在没有快照的情况下恢复etcd集群'),
+  exact: true,
+  
+},
+{
   path: '/docs/troubleshooting/Kubernetes/etcd相关/磁盘IOPS不足，etcd出现大量慢日志，导致K8S集群使用缓慢甚至组件故障',
   component: ComponentCreator('/docs/troubleshooting/Kubernetes/etcd相关/磁盘IOPS不足，etcd出现大量慢日志，导致K8S集群使用缓慢甚至组件故障'),
+  exact: true,
+  
+},
+{
+  path: '/docs/troubleshooting/Kubernetes/istio相关/istio访问异常问题处理',
+  component: ComponentCreator('/docs/troubleshooting/Kubernetes/istio相关/istio访问异常问题处理'),
   exact: true,
   
 },

@@ -59,18 +59,15 @@ unevictable | 无法再生的内存，以字节为单位
 hierarchical_memory_limit | 包含memeory cgroup 的层级的内存限制，单位为字节
 hierarchical_memsw_limit | 包含memory cgroupd的层级的内存加swap限制，单位为字节
 
-* 另外这个文件中关于内存的信息是最全的
+* 这个文件中关于内存的信息是最全的
 
-以上提供了这么多的文件和参数含义，其实是为了更好的去理解在我们容器监控中使用的一些数据来源和表达式,例如在获取容器内存使用量其实就是存储在/sys/fs/cgroup/memory/docker/<containerId>/memory.usage_in_bytes 文件内，再例如容器内存限制问题，如果没限制内存，Limit = machine_mem，否则该限制数值来自于/sys/fs/cgroup/memory/docker/[id]/memory.limit_in_bytes。
-
-
-
+以上提供了这么多的文件和参数含义，其实是为了更好的去理解在我们容器监控中使用的一些数据来源和表达式,例如在获取容器内存使用量其实就是存储在"/sys/fs/cgroup/memory/docker/< containerId >/memory.usage_in_bytes"文件内，再例如容器内存限制问题，如果没限制内存，Limit = machine_mem，否则该限制数值来自于"/sys/fs/cgroup/memory/docker/[ id ]/memory.limit_in_bytes"。
 
 
 
 ## kubectl top监控原理
 #### 数据链路
-kubectl top和k8s dashboard以及HPA等调度组件使用的数据是一样，数据链路如下:
+其实kubectl top和k8s dashboard以及HPA等调度组件使用的数据是一样，数据链路如下:
 ![image](
 https://ivanwz.oss-cn-shenzhen.aliyuncs.com/md/kubectl%20top%E4%B8%8Edocker%20stats%E5%86%85%E5%AD%98%E4%B8%8D%E4%B8%80%E8%87%B4/Xnip2021-05-19_16-56-33.jpg)
 
@@ -94,7 +91,7 @@ metric-server和普通pod都是使用 api/xx 的资源接口，即 metric作为�
 
 名称 |  说明 
 :-: | :-:
-<div style="width: 250">container_memory_rss | RSS内存，即常驻内存集（Resident Set Size），是分配给进程使用实际物理内存，而不是磁盘上缓存的虚拟内存。RSS内存包括所有分配的栈内存和堆内存，以及加载到物理内存中的共享库占用的内存空间，但不包括进入交换分区的内存。
+container_memory_rss | RSS内存，即常驻内存集（Resident Set Size），是分配给进程使用实际物理内存，而不是磁盘上缓存的虚拟内存。RSS内存包括所有分配的栈内存和堆内存，以及加载到物理内存中的共享库占用的内存空间，但不包括进入交换分区的内存。
 container_memory_usage_bytes | 当前使用的内存量，包括所有使用的内存，不管有没有被访问。
 container_memory_max_usage_bytes | 最大内存使用量的记录
 container_memory_cache | 高速缓存（cache）的使用量。cache是位于CPU与主内存间的一种容量较小但速度很高的存储器，是为了提高cpu和内存之间的数据交换速度而设计的 Size），是分配给进程使用实际物理内存，而不是磁盘上缓存的虚拟内存。RSS内存包括所有分配的栈内存和堆内存，以及加载到物理内存中的共享库占用的内存空间，但不包括进入交换分区的内存。

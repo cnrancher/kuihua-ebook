@@ -27,13 +27,45 @@
     "component": "component---theme-doc-item-178-a40",
     "content": "content---docs-solution-docker-二进制方式升级containerd版本d-50-2dc"
   },
+  "/docs/solution/helm/helm2升级至helm3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-solution-helm-helm-2-升级至helm-3-cb-9-a7d"
+  },
+  "/docs/solution/kubernetes/Kubernetess ingress-nginx实现金丝雀发布": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-solution-kubernetes-kubernetess-ingress-nginx实现金丝雀发布bd-1-d57"
+  },
+  "/docs/solution/kubernetes/nginx-ingress基于gRPC协议通信": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-solution-kubernetes-nginx-ingress基于g-rp-c协议通信f-97-812"
+  },
   "/docs/solution/monitoring/Rancher-2.4.8-ent以上版本监控使用Nodeport暴露": {
     "component": "component---theme-doc-item-178-a40",
     "content": "content---docs-solution-monitoring-rancher-2-4-8-ent以上版本监控使用-nodeport暴露b-37-a29"
   },
+  "/docs/solution/monitoring/在2.5dashhboard启动监控grafana对接ldap": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-solution-monitoring-在-2-5-dashhboard启动监控grafana对接ldap-5-cc-c46"
+  },
+  "/docs/solution/storage/ceph对接kubernetes storage class": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-solution-storage-ceph对接kubernetes-storage-classc-78-e16"
+  },
   "/docs/tooluse/kubernetes/kubeletCPU使用率过高问题排查": {
     "component": "component---theme-doc-item-178-a40",
     "content": "content---docs-tooluse-kubernetes-kubelet-cp-u使用率过高问题排查f-6-e-3c8"
+  },
+  "/docs/tooluse/toolsinstall/安装kubectl ingress-nginx": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-tooluse-toolsinstall-安装kubectl-ingress-nginx-1-d-2-e2e"
+  },
+  "/docs/troubleshooting/Docker/kubectl的top命令与docker的stats命令显示内存不一致问题": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-troubleshooting-docker-kubectl的top命令与docker的stats命令显示内存不一致问题-2-ed-31c"
+  },
+  "/docs/troubleshooting/Docker/selinux引起的docker容器无法启动的问题": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-troubleshooting-docker-selinux引起的docker容器无法启动的问题-84-e-3de"
   },
   "/docs/troubleshooting/Docker/大量runc不释放，导致节点负载高": {
     "component": "component---theme-doc-item-178-a40",
@@ -59,9 +91,17 @@
     "component": "component---theme-doc-item-178-a40",
     "content": "content---docs-troubleshooting-kubernetes-etcd相关-etcd集群中超过一半以上的节点故障导致leader选主失败-0-df-82a"
   },
+  "/docs/troubleshooting/Kubernetes/etcd相关/在没有快照的情况下恢复etcd集群": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-troubleshooting-kubernetes-etcd相关-在没有快照的情况下恢复etcd集群a-2-b-baa"
+  },
   "/docs/troubleshooting/Kubernetes/etcd相关/磁盘IOPS不足，etcd出现大量慢日志，导致K8S集群使用缓慢甚至组件故障": {
     "component": "component---theme-doc-item-178-a40",
     "content": "content---docs-troubleshooting-kubernetes-etcd相关-磁盘iop-s不足，etcd出现大量慢日志，导致-k-8-s集群使用缓慢甚至组件故障-54-c-4ce"
+  },
+  "/docs/troubleshooting/Kubernetes/istio相关/istio访问异常问题处理": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-troubleshooting-kubernetes-istio相关-istio访问异常问题处理-1-bd-535"
   },
   "/docs/troubleshooting/Kubernetes/存储相关/POD使用性能低的NAS导致节点大量僵尸进程，系统负载虚高": {
     "component": "component---theme-doc-item-178-a40",
