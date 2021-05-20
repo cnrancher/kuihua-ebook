@@ -33,7 +33,11 @@ const metadata = {
             "troubleshooting/Kubernetes/Network相关/双网卡网络Macvlan路由配置问题导致vxlan网卡访问丢包": "双网卡网络Macvlan路由配置问题导致vxlan网卡访问丢包",
             "troubleshooting/application/JAVA应用，内存超出后没有进行OOMKILL": "JAVA应用，内存超出Limit后没有进行OOMKILL",
             "troubleshooting/OS/Kernel/内核参数tcp_tw_recycle参数导致服务访问异常": "内核参数tcp_tw_recycle参数导致服务访问异常",
-            "troubleshooting/Kubernetes/istio相关/istio访问异常问题处理": "istio访问异常问题处理"
+            "troubleshooting/Kubernetes/istio相关/istio访问异常问题处理": "istio访问异常问题处理",
+            "troubleshooting/Kubernetes/etcd相关/在没有快照的情况下恢复etcd集群": "在没有快照的情况下恢复etcd集群",
+            "troubleshooting/Kubernetes/etcd相关/etcd集群中超过一半以上的节点故障导致leader选主失败": "etcd集群中超过一半以上的节点故障导致leader选主失败",
+            "troubleshooting/Docker/selinux引起的docker容器无法启动的问题": "selinux引起的docker容器无法启动的问题",
+            "troubleshooting/Docker/kubectl top与docker stats内存不一致问题": "kubectl top与docker stats内存不一致问题"
         },
         solution: {
             "solution/monitoring/Rancher-2.4.8-ent以上版本监控使用Nodeport暴露": "Rancher-2.4.8-ent以上版本监控使用Nodeport暴露",
@@ -44,6 +48,7 @@ const metadata = {
             "solution/kubernetes/nginx-ingress基于gRPC协议通信" : "nginx-ingress基于gRPC协议通信",
             "solution/kubernetes/Kubernetess ingress-nginx实现金丝雀发布": "Kubernetess ingress-nginx实现金丝雀发布",
             "solution/storage/ceph对接kubernetes storage class": "ceph对接kubernetes storage class",
+            "solution/monitoring/在2.5dashhboard启动监控grafana对接ldap": "在2.5dashhboard启动监控grafana对接ldap"
         },
         tooluse: {
             "tooluse/kubernetes/kubeletCPU使用率过高问题排查": "kubeletCPU使用率过高问题排查",
