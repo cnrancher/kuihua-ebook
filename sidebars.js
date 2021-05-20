@@ -7,7 +7,10 @@
 
 module.exports = {
     troubleshooting: {
-        Docker相关: ["troubleshooting/Docker/大量runc不释放，导致节点负载高"],
+        Docker相关: ["troubleshooting/Docker/大量runc不释放，导致节点负载高",
+                    "troubleshooting/Docker/selinux引起的docker容器无法启动的问题",
+                    "troubleshooting/Docker/kubectl top与docker stats内存不一致问题"
+                ],
         Kubernetes相关: [
             {
                 type: "category",
@@ -15,6 +18,8 @@ module.exports = {
                 items: [
                     "troubleshooting/Kubernetes/etcd相关/etcd集群中超过一半以上的节点故障导致leader选主失败",
                     "troubleshooting/Kubernetes/etcd相关/磁盘IOPS不足，etcd出现大量慢日志，导致K8S集群使用缓慢甚至组件故障",
+                    "troubleshooting/Kubernetes/etcd相关/在没有快照的情况下恢复etcd集群",
+                    "troubleshooting/Kubernetes/etcd相关/etcd集群中超过一半以上的节点故障导致leader选主失败"
                 ],
             },
             {
@@ -80,6 +85,7 @@ module.exports = {
             label: "监控相关",
             items: [
                 "solution/monitoring/Rancher-2.4.8-ent以上版本监控使用Nodeport暴露",
+                "solution/monitoring/在2.5dashhboard启动监控grafana对接ldap"
             ],
         },
        ],
