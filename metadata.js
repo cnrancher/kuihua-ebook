@@ -37,7 +37,7 @@ const metadata = {
             "troubleshooting/Kubernetes/etcd相关/在没有快照的情况下恢复etcd集群": "在没有快照的情况下恢复etcd集群",
             "troubleshooting/Kubernetes/etcd相关/etcd集群中超过一半以上的节点故障导致leader选主失败": "etcd集群中超过一半以上的节点故障导致leader选主失败",
             "troubleshooting/Docker/selinux引起的docker容器无法启动的问题": "selinux引起的docker容器无法启动的问题",
-            "troubleshooting/Docker/kubectl top与docker stats内存不一致问题": "kubectl top与docker stats内存不一致问题"
+            "troubleshooting/Docker/kubectl的top命令与docker的stats命令显示内存不一致问题": "kubectl的top命令与docker的stats命令显示内存不一致问题"
         },
         solution: {
             "solution/monitoring/Rancher-2.4.8-ent以上版本监控使用Nodeport暴露": "Rancher-2.4.8-ent以上版本监控使用Nodeport暴露",

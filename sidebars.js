@@ -9,7 +9,7 @@ module.exports = {
     troubleshooting: {
         Docker相关: ["troubleshooting/Docker/大量runc不释放，导致节点负载高",
                     "troubleshooting/Docker/selinux引起的docker容器无法启动的问题",
-                    "troubleshooting/Docker/kubectl top与docker stats内存不一致问题"
+                    "troubleshooting/Docker/kubectl的top命令与docker的stats命令显示内存不一致问题"
                 ],
         Kubernetes相关: [
             {
