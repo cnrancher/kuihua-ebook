@@ -82,7 +82,7 @@ module.exports = {
        监控相关: [
         {
             type: "category",
-            label: "监控相关",
+            label: "Prometheus相关",
             items: [
                 "solution/monitoring/Rancher-2.4.8-ent以上版本监控使用Nodeport暴露",
                 "solution/monitoring/在2.5dashhboard启动监控grafana对接ldap"
@@ -92,7 +92,7 @@ module.exports = {
        网络相关: [
         {
             type: "category",
-            label: "网络相关",
+            label: "容器网络相关",
             items: [
                 "solution/network/canal网络添加黑洞路由"
             ],
@@ -101,7 +101,7 @@ module.exports = {
        存储相关: [
         {
             type: "category",
-            label: "存储相关",
+            label: "存储对接相关",
             items: [
                 "solution/storage/ceph对接kubernetes storage class",
             ],
@@ -110,7 +110,7 @@ module.exports = {
        公有云小技巧: [
         {
             type: "category",
-            label: "公有云小技巧",
+            label: "EKS小技巧",
             items: [
                 "solution/cloud/通过rancher创建eks使用alb-ingress",
             ],
@@ -119,7 +119,7 @@ module.exports = {
        日志相关: [
         {
             type: "category",
-            label: "日志相关",
+            label: "Logging相关",
             items: [
                 "solution/Longging/RancherLogging收集日志进行外部二次处理",
             ],
