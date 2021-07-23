@@ -1,0 +1,15 @@
+{
+  "id": "tooluse/toolsinstall/安装kubectl ingress-nginx",
+  "title": "安装kubectl ingress-nginx",
+  "description": "# 安装kubectl ingress-nginx",
+  "source": "@site/docs/tooluse/toolsinstall/安装kubectl ingress-nginx.md",
+  "permalink": "/docs/tooluse/toolsinstall/安装kubectl ingress-nginx",
+  "editUrl": "https://github.com/cnrancher/docs-rancher2/edit/master/docs/tooluse/toolsinstall/安装kubectl ingress-nginx.md",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "tooluse",
+  "previous": {
+    "title": "kubeletCPU使用率过高问题排查",
+    "permalink": "/docs/tooluse/kubernetes/kubeletCPU使用率过高问题排查"
+  }
+}

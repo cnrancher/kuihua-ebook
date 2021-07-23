@@ -13,7 +13,7 @@
     "permalink": "/docs/troubleshooting/Kubernetes/Network相关/Pod内无法访问api-server"
   },
   "next": {
-    "title": "unregister_netdevice: waiting for eth0 to become free 报错",
-    "permalink": "/docs/troubleshooting/OS/Kernel/unregister_netdevice: waiting for eth0 to become free 报错"
+    "title": "kubeletCPU使用率过高问题排查",
+    "permalink": "/docs/tooluse/kubernetes/kubeletCPU使用率过高问题排查"
   }
 }
