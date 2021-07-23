@@ -58,6 +58,7 @@ unevictable | 无法再生的内存，以字节为单位
 hierarchical_memory_limit | 包含memeory cgroup 的层级的内存限制，单位为字节
 hierarchical_memsw_limit | 包含memory cgroupd的层级的内存加swap限制，单位为字节
 
+
 > 另外这个文件中关于内存的信息是最全的
 
 以上提供了这么多的文件和参数含义，其实是为了更好的去理解在我们容器监控中使用的一些数据来源和表达式,例如在获取容器内存使用量其实就是存储在`/sys/fs/cgroup/memory/docker/<containerId>/memory.usage_in_bytes` 文件内，再例如容器内存限制问题，如果没限制内存，Limit = machine_mem，否则该限制数值来自于`/sys/fs/cgroup/memory/docker/[id]/memory.limit_in_bytes`。
@@ -66,7 +67,9 @@ hierarchical_memsw_limit | 包含memory cgroupd的层级的内存加swap限制�
 
 ### 数据链路
 
+
 kubectl top和k8s dashboard以及HPA等调度组件使用的数据是一样，数据链路如下:
+
 ![image](
 https://ivanwz.oss-cn-shenzhen.aliyuncs.com/md/kubectl%20top%E4%B8%8Edocker%20stats%E5%86%85%E5%AD%98%E4%B8%8D%E4%B8%80%E8%87%B4/Xnip2021-05-19_16-56-33.jpg)
 

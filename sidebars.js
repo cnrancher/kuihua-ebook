@@ -89,6 +89,15 @@ module.exports = {
             ],
         },
        ],
+       网络相关: [
+        {
+            type: "category",
+            label: "网络相关",
+            items: [
+                "solution/network/canal网络添加黑洞路由"
+            ],
+        },
+       ],
        存储相关: [
         {
             type: "category",
