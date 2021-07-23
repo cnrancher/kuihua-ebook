@@ -82,12 +82,15 @@ export default [
   
 },
 {
+<<<<<<< HEAD
   path: '/docs/solution/network/canal网络添加黑洞路由',
   component: ComponentCreator('/docs/solution/network/canal网络添加黑洞路由'),
   exact: true,
   
 },
 {
+=======
+>>>>>>> e5232c61ba03b0f5a8d50d0b6eeb7a2a9e0b08f4
   path: '/docs/solution/storage/ceph对接kubernetes storage class',
   component: ComponentCreator('/docs/solution/storage/ceph对接kubernetes storage class'),
   exact: true,

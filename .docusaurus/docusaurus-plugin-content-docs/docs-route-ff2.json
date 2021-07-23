@@ -194,6 +194,7 @@
       },
       {
         "type": "category",
+<<<<<<< HEAD
         "label": "网络相关",
         "items": [
           {
@@ -211,6 +212,8 @@
       },
       {
         "type": "category",
+=======
+>>>>>>> e5232c61ba03b0f5a8d50d0b6eeb7a2a9e0b08f4
         "label": "存储相关",
         "items": [
           {
@@ -329,7 +332,10 @@
     "/docs/solution/kubernetes/nginx-ingress基于gRPC协议通信": "solution",
     "/docs/solution/monitoring/Rancher-2.4.8-ent以上版本监控使用Nodeport暴露": "solution",
     "/docs/solution/monitoring/在2.5dashhboard启动监控grafana对接ldap": "solution",
+<<<<<<< HEAD
     "/docs/solution/network/canal网络添加黑洞路由": "solution",
+=======
+>>>>>>> e5232c61ba03b0f5a8d50d0b6eeb7a2a9e0b08f4
     "/docs/solution/storage/ceph对接kubernetes storage class": "solution",
     "/docs/tooluse/kubernetes/kubeletCPU使用率过高问题排查": "tooluse",
     "/docs/tooluse/toolsinstall/安装kubectl ingress-nginx": "tooluse",

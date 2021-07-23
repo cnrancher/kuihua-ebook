@@ -9,8 +9,13 @@
   "lastUpdatedAt": 1539502055,
   "sidebar": "solution",
   "previous": {
+<<<<<<< HEAD
     "title": "canal网络添加黑洞路由",
     "permalink": "/docs/solution/network/canal网络添加黑洞路由"
+=======
+    "title": "在2.5dashhboard启动监控grafana对接ldap",
+    "permalink": "/docs/solution/monitoring/在2.5dashhboard启动监控grafana对接ldap"
+>>>>>>> e5232c61ba03b0f5a8d50d0b6eeb7a2a9e0b08f4
   },
   "next": {
     "title": "通过rancher创建eks使用alb-ingress",

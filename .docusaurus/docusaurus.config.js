@@ -89,6 +89,7 @@ export default {
             ]
           }
         ],
+<<<<<<< HEAD
         "网络相关": [
           {
             "type": "category",
@@ -98,6 +99,8 @@ export default {
             ]
           }
         ],
+=======
+>>>>>>> e5232c61ba03b0f5a8d50d0b6eeb7a2a9e0b08f4
         "存储相关": [
           {
             "type": "category",
@@ -171,8 +174,12 @@ export default {
           "日志相关": "一些跟日志相关的解决方案手册",
           "升级相关": "各种乱七八糟的东西升级手册",
           "Kubernetes相关": "Kubernetes与周边组件相关解决方案",
+<<<<<<< HEAD
           "存储相关": "一些跟存储相关的解决方案",
           "网络相关": "一些跟网络相关的解决方案"
+=======
+          "存储相关": "一些跟存储相关的解决方案"
+>>>>>>> e5232c61ba03b0f5a8d50d0b6eeb7a2a9e0b08f4
         },
         "tooluse": {
           "Kubernenetes组件异常排查": "一些跟Kubernetes组件异常排场相关的手册",
@@ -207,8 +214,12 @@ export default {
           "solution/kubernetes/nginx-ingress基于gRPC协议通信": "nginx-ingress基于gRPC协议通信",
           "solution/kubernetes/Kubernetess ingress-nginx实现金丝雀发布": "Kubernetess ingress-nginx实现金丝雀发布",
           "solution/storage/ceph对接kubernetes storage class": "ceph对接kubernetes storage class",
+<<<<<<< HEAD
           "solution/monitoring/在2.5dashhboard启动监控grafana对接ldap": "在2.5dashhboard启动监控grafana对接ldap",
           "solution/network/canal网络添加黑洞路由": "canal网络添加黑洞路由"
+=======
+          "solution/monitoring/在2.5dashhboard启动监控grafana对接ldap": "在2.5dashhboard启动监控grafana对接ldap"
+>>>>>>> e5232c61ba03b0f5a8d50d0b6eeb7a2a9e0b08f4
         },
         "tooluse": {
           "tooluse/kubernetes/kubeletCPU使用率过高问题排查": "kubeletCPU使用率过高问题排查",

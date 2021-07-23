@@ -13,7 +13,12 @@
     "permalink": "/docs/solution/monitoring/Rancher-2.4.8-ent以上版本监控使用Nodeport暴露"
   },
   "next": {
+<<<<<<< HEAD
     "title": "canal网络添加黑洞路由",
     "permalink": "/docs/solution/network/canal网络添加黑洞路由"
+=======
+    "title": "ceph对接kubernetes storage class",
+    "permalink": "/docs/solution/storage/ceph对接kubernetes storage class"
+>>>>>>> e5232c61ba03b0f5a8d50d0b6eeb7a2a9e0b08f4
   }
 }
